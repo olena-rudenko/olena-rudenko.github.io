@@ -28,19 +28,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {
-    color: #404040
-}
-
-span {
-    font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #0085a1;
 }
 
 a:hover, a:focus {
-    color: #0085a1
+    color: #00a1c1;
 }
 
 a img:hover, a img:focus {
     cursor: zoom-in
+}
+
+.social-link {
+    color: #111E34;
+}
+
+span {
+    font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 blockquote {
@@ -91,6 +95,23 @@ hr.small {
      font-size: 42px;
      font-weight: bold;
      margin: 0 auto;
+ }
+
+ .location {
+    display: inline-block;
+    color:#959595;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 17px;
+    text-align: center;
+    font-family: "PT Serif", 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+ }
+
+ .location-img {
+     width: 20px;
+     display: inline-block;
+     color: #959595;
  }
 .work-subtitle {
     display:block;
