@@ -4,8 +4,9 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
+ 
 body {
-    font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Restora", "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     line-height: 1.7;
     color: #404040
@@ -21,7 +22,6 @@ p a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     line-height: 1.5;
 
@@ -43,9 +43,6 @@ a img:hover, a img:focus {
     color: #111E34;
 }
 
-span {
-    font-family: "PT Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 blockquote {
     color: gray;
@@ -104,7 +101,6 @@ hr.small {
     font-weight: 300;
     font-size: 17px;
     text-align: center;
-    font-family: "PT Serif", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0 auto;
  }
 
@@ -120,13 +116,32 @@ hr.small {
     font-weight: 300;
     font-size: 24px;
     text-align: center;
-    font-family: "PT Serif", 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0 auto;
 }
 .work-scrolling {
     font-size: 18px;
     line-height: 1.4;
     text-transform:uppercase
+}
+
+.title {
+    display:block;
+    color:#272a41;
+    line-height: 1.5;
+    font-weight: bold;
+    font-size: 27px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.subtitle {
+    display:block;
+    color:#959595;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .caption-style-1 {
@@ -194,6 +209,9 @@ hr.small {
 
 }
 
+.item {
+    border-bottom: 1px solid #eee;
+}
 
 .tabs {
     text-align: center;
