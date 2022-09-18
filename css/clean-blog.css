@@ -928,3 +928,8 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #0085a1
 }
+
+.highlight-title-small {
+    color: #5373C1;
+    padding-bottom: 6px;
+}
