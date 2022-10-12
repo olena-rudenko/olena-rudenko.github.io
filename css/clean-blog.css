@@ -447,6 +447,14 @@ hr.small {
     padding: 0px;
 }
 
+.remove-padding {
+    padding-left: 0;
+}
+
+.padding-10 {
+    padding-left: 20px;
+}
+
 .caption-style-1 li {
     float: left;
     padding: 0px;
