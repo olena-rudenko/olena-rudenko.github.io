@@ -288,9 +288,10 @@ hr.small {
     color:#404040;
     line-height: 1.6;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 21px;
     text-align: center;
     margin: 0 auto;
+    padding-top: 10px;
 }
 .work-scrolling {
     font-size: 18px;
@@ -490,8 +491,8 @@ hr.small {
 
 .caption-style-1 .blur {
     background-color: rgba(0,0,0,0.65);
-    height: 340px;
-    width: 340px;
+    height: 385px;
+    width: 385px;
     z-index: 5;
     position: absolute;
 
@@ -507,10 +508,12 @@ hr.small {
     z-index: 10;
     color: #fff;
     position: absolute;
-    width: 340px;
-    height: 340px;
+    width: 385px;
+    height: 385px;
     text-align: center;
     top: 120px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -523,6 +526,10 @@ hr.small {
     font-size: 15px;
     margin-top: 35px;
     margin-bottom: 25px;
+}
+
+.design-item {
+    padding: 0 3px;
 }
 
 
@@ -780,7 +787,7 @@ hr.small {
 .caption {
     text-align: center;
     font-size: 14px;
-    padding: 10px;
+    /* padding: 10px; */
     margin: 0;
     display: block;
     border-bottom-right-radius: 5px;
