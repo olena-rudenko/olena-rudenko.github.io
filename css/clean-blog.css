@@ -288,7 +288,7 @@ hr.small {
     color:#404040;
     line-height: 1.6;
     font-weight: 400;
-    font-size: 21px;
+    /* font-size: 21px; */
     text-align: center;
     margin: 0 auto;
     padding-top: 10px;
@@ -298,6 +298,38 @@ hr.small {
     line-height: 1.4;
     text-transform:uppercase
 }
+
+@media only screen and (min-width: 300px) {
+    .work-subtitle {
+        font-size: 14px;
+
+    }
+}
+@media only screen and (min-width: 480px) {
+    .work-subtitle {
+        font-size: 16px;
+        padding-top: 0.5em;
+    }
+}
+  @media only screen and (min-width: 768px) {
+    .work-subtitle {
+        font-size: 16px;
+        
+    }
+}
+@media only screen and (min-width: 1025px) {
+    .work-subtitle {
+        font-size: 19px;
+        
+    }
+}
+@media only screen and (min-width: 1280px) {
+    .work-subtitle {
+        font-size: 20px;
+       
+    }
+}
+
 
 .article-block {
     margin-bottom: 15px;
