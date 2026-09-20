@@ -406,12 +406,7 @@ a img:focus {
   .nav-link {
     font-size: 12px;
   }
-
-  .nav-link:nth-child(2) {
-    display: none;
-  }
-
-  .brand-logo {
+.brand-logo {
     width: 29px;
     height: 29px;
   }
@@ -4493,12 +4488,7 @@ body {
   .case-study-page .nav-link {
     font-size: 11px;
   }
-
-  .case-study-page .nav-link:nth-child(2) {
-    display: none;
-  }
-
-  .case-study-page .case-hero {
+.case-study-page .case-hero {
     padding-bottom: 44px;
   }
 
@@ -7928,5 +7918,205 @@ body {
 @media (max-width: 600px) {
   .dating-footer-content {
     width: 100%;
+  }
+}
+
+
+/* =========================================================
+   FINAL HEADER FIX
+   Portfolio + CV must ALWAYS remain visible on mobile.
+   This block intentionally comes LAST so it overrides all
+   earlier/legacy header rules.
+   ========================================================= */
+
+.site-header {
+  overflow: visible !important;
+}
+
+.site-header .header-inner,
+.case-study-page .header-inner {
+  box-sizing: border-box !important;
+}
+
+/* Keep both navigation items visible at every viewport size. */
+.site-header .main-nav,
+.case-study-page .main-nav {
+  display: flex !important;
+  align-items: center !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin-left: 0 !important;
+}
+
+.site-header .nav-link,
+.case-study-page .nav-link,
+.site-header .nav-link:nth-child(2),
+.case-study-page .nav-link:nth-child(2) {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  flex: 0 0 auto !important;
+  min-width: max-content !important;
+  white-space: nowrap !important;
+}
+
+/* Desktop: preserve the existing horizontal header. */
+@media (min-width: 801px) {
+  .site-header .header-inner,
+  .case-study-page .header-inner {
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .site-header .main-nav,
+  .case-study-page .main-nav {
+    margin-left: auto !important;
+    margin-right: 38px !important;
+    gap: 38px !important;
+  }
+}
+
+/* Mobile: use three protected columns:
+   logo | Portfolio + CV | LinkedIn */
+@media (max-width: 800px) {
+  .site-header .header-inner,
+  .case-study-page .header-inner {
+    width: 100% !important;
+    max-width: none !important;
+    height: 60px !important;
+    padding: 0 16px !important;
+
+    display: grid !important;
+    grid-template-columns: auto minmax(0, auto) auto !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    column-gap: 12px !important;
+  }
+
+  .site-header .brand,
+  .case-study-page .brand {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+    min-width: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .site-header .main-nav,
+  .case-study-page .main-nav {
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 16px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-width: max-content !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+  }
+
+  .site-header .nav-link,
+  .case-study-page .nav-link {
+    padding: 21px 0 !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+  }
+
+  /* The second navigation item is CV — never hide it. */
+  .site-header .nav-link:nth-child(2),
+  .case-study-page .nav-link:nth-child(2) {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .site-header .header-cta,
+  .case-study-page .header-cta {
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+
+    min-width: 0 !important;
+    width: auto !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    padding: 7px 9px !important;
+  }
+
+  /* On mobile the CTA is icon-only, giving Portfolio + CV
+     guaranteed room even on narrow iPhones. */
+  .site-header .header-cta > span,
+  .case-study-page .header-cta > span {
+    display: none !important;
+  }
+
+  .site-header .linkedin-icon,
+  .case-study-page .linkedin-icon {
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+/* Small phones. */
+@media (max-width: 520px) {
+  .site-header .header-inner,
+  .case-study-page .header-inner {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    column-gap: 8px !important;
+  }
+
+  .site-header .main-nav,
+  .case-study-page .main-nav {
+    gap: 13px !important;
+  }
+
+  .site-header .nav-link,
+  .case-study-page .nav-link {
+    font-size: 12px !important;
+  }
+
+  .site-header .brand-logo,
+  .case-study-page .brand-logo {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+/* Very narrow phones. */
+@media (max-width: 360px) {
+  .site-header .header-inner,
+  .case-study-page .header-inner {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    column-gap: 6px !important;
+  }
+
+  .site-header .main-nav,
+  .case-study-page .main-nav {
+    gap: 10px !important;
+  }
+
+  .site-header .nav-link,
+  .case-study-page .nav-link {
+    font-size: 11px !important;
+  }
+
+  .site-header .header-cta,
+  .case-study-page .header-cta {
+    padding: 6px 7px !important;
+  }
+}
+
+/* Absolutely no selector later in this stylesheet can hide CV. */
+@media (max-width: 800px) {
+  .site-header .nav-link:nth-child(2),
+  .case-study-page .nav-link:nth-child(2) {
+    display: block !important;
   }
 }
